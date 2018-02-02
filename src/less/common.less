@@ -1,0 +1,80 @@
+@background: #fff;
+@blue: #007fba;
+
+
+@font-face {
+  font-family: "digital-7";
+  src: url("./assets/digital-7.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: @background;
+  font-family: 'Helvetica';
+  font-size: '16px'
+}
+
+.logoBar {
+  height: 50px;
+  width: 100%;
+  background-image: url(assets/casioLogo.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+
+  .solarPanel {
+    width: 110px;
+    height: 25px;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    right: 20px;
+    border-radius: 2px;
+    border: 3px solid #888;
+    text-align: center;
+  }
+
+  .solarPanel:after {
+    content: "TWO WAY POWER";
+     line-height: 70px;
+     font-size: 8px;
+   }
+
+}
+
+
+
+.container {
+  width: 285px;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px 15px;
+  background: #eee;
+  background-image: linear-gradient(#ccc, #ebebeb, #ccc);
+  position: relative;
+}
+
+.embossed {
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 8px;
+  box-shadow:
+    inset 0 -3px 19px rgba(255, 255, 255, 0.3),
+    inset 0 -5px 10px rgba(0, 0, 0, 0.3),
+    0 4px 6px rgba(255, 255, 255, 0.9)
+}
+
+.displayPanel {
+  width: auto;
+  height: 60px;
+  border: 7px solid #b7b4b4;
+  font-size: 50pt;
+  overflow: hidden;
+  text-align: right;
+  line-height: 66px;
+  background: #fcfcfc;
+  border-radius: 2px;
+  outline: 6px solid #ccc;
+  margin: 10px 5px;
+  padding: 0 4px;
+  font-family: 'digital-7', Arial, sans-serif;
+}

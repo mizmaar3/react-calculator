@@ -1,0 +1,47 @@
+@darkGray: #848484;
+@lightGray: #4f4f4f;
+
+.calculatorButtons {
+  width: 100%;
+  height: 300px;
+  border-spacing: 10px;
+
+  td {
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 14pt;
+    width: 30px;
+    border-bottom: 5px solid rgb(0,0,0);
+    border-radius: 9px;
+
+    background: -webkit-linear-gradient(top, @darkGray 0%, @lightGray 100%);
+    background: linear-gradient(to bottom, @darkGray 0%, @lightGray 100%);
+
+    &:hover {
+      background: -webkit-linear-gradient(top, @lightGray 0%,@darkGray 100%);
+      background: linear-gradient(to bottom, @lightGray 0%,@darkGray 100%);
+    }
+
+
+    &:active {
+      border-top: 2px solid #eee;
+      border-bottom: 0;
+    }
+  }
+
+  .noButton,
+  .noButton:hover,
+  .noButton:active {
+    background: rgba(0,0,0,0);
+    border: 0;
+  }
+
+  .modelName {
+    color: rgb(0,0,0);
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 20px;
+  }
+}

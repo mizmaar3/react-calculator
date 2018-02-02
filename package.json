@@ -1,0 +1,56 @@
+{
+  "name": "calc",
+  "version": "0.0.1",
+  "description": "test",
+  "main": "src/main.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": {
+    "name": "Muhammad Usman",
+    "email": "mizmaar3@hotmail.com",
+    "url": "https://github.com/mizmaar3"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "js, html, jsx, less"
+    }
+  },
+  "scripts": {
+    "build": "export NODE_ENV=development && gulp && rollup -c",
+    "build:watch": "npm-watch",
+    "release": "export NODE_ENV=production && gulp && rollup -c",
+    "start": "http-server ./dist/ -p 1984 --cors"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-syntax-decorators": "^6.13.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.2",
+    "gulp-uglify": "^3.0.0",
+    "npm-watch": "^0.2.0",
+    "postscribe": "^2.0.8",
+    "rollup": "^0.47.6",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-replace": "^1.1.1",
+    "rollup-plugin-uglify": "^2.0.1"
+  },
+  "keywords": [],
+  "dependencies": {
+    "http-server": "^0.10.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
